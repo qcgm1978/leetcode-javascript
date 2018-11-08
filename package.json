@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "test leetcode",
   "main": "",
+  "jest": {
+    "setupTestFrameworkScriptFile": "jest-chain"
+  },
   "scripts": {
     "test": "node --inspect=127.0.0.1:5757 ./node_modules/jest/bin/jest.js --runInBand  --watch --env node"
   },
@@ -18,5 +21,8 @@
   "homepage": "https://github.com/qcgm1978/leetcode-javascript#readme",
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "jest-chain": "^1.0.5"
   }
 }
