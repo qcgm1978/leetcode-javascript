@@ -1,0 +1,22 @@
+{
+  "name": "leetcode-javascript",
+  "version": "1.0.0",
+  "description": "test leetcode",
+  "main": "",
+  "scripts": {
+    "test": "node --inspect=127.0.0.1:5757 ./node_modules/jest/bin/jest.js --runInBand  --watch --env node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qcgm1978/leetcode-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qcgm1978/leetcode-javascript/issues"
+  },
+  "homepage": "https://github.com/qcgm1978/leetcode-javascript#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
