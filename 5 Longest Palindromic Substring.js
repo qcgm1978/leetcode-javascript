@@ -33,8 +33,9 @@ module.exports = function (s) {
 
         var str = expandFromCenterAndCheckForPalindrome(s, left, right);
 
-        if (str.length > result.length && str.length > 1) {
+        if (str.length > result.length) {
             result.push(str);
+            result = result.filter(item => item.length >= str.length)
         } else if (str.length === result.length) {
 
         }
