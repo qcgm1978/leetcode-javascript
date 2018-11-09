@@ -33,9 +33,9 @@ module.exports = function (s) {
 
         var str = expandFromCenterAndCheckForPalindrome(s, left, right);
 
-        if (str.length > result.length) {
+        if (str.length > result.slice(-1).length && str.length > 1) {
             result.push(str);
-            result = result.filter(item => item.length >= str.length)
+            // result = result.filter(item => item.length >= str.length)
         } else if (str.length === result.length) {
 
         }
@@ -81,10 +81,10 @@ var expandFromCenterAndCheckForPalindrome = function (s, left, right) {
     // that's the case "aba"
     // which it check if b === b as left === right
     // then a === a 
-    while (left >= 0 && right < s.length && s[left] === s[right]) {
-        left--;
-        right++;
-    }
-
+    // while (left >= 0 && right < s.length && s[left] === s[right]) {
+    //     left--;
+    //     right++;
+    // }
+    for (; left >= 0 && right < s.length && s[left] === s[right]; left-- , right++);
     return s.substring(left + 1, right);
 }
