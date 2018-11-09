@@ -23,6 +23,7 @@
     "jest": "^23.6.0"
   },
   "dependencies": {
-    "jest-chain": "^1.0.5"
+    "jest-chain": "^1.0.5",
+    "mockjs": "^1.0.1-beta3"
   }
 }
