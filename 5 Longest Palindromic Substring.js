@@ -47,7 +47,7 @@ module.exports = function (s) {
 // other implementation
 
 var longestPalindrome = function (s) {
-    if (s === null || s.length === 0) {
+    if (!s) {
         return "";
     }
 
@@ -85,6 +85,6 @@ var expandFromCenterAndCheckForPalindrome = function (s, left, right) {
     //     left--;
     //     right++;
     // }
-    for (; left >= 0 && right < s.length && s[left] === s[right]; left-- , right++);
+    for (left, right; left >= 0 && right < s.length && s[left] === s[right]; left-- , right++);
     return s.substring(left + 1, right);
 }

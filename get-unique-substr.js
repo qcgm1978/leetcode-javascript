@@ -5,10 +5,7 @@
 
 
 module.exports = {
-    reduceMethod(s) {
-        if (s === null || s.length === 0) {
-            return 0;
-        }
+    reduceMethod(s = '') {
         const { maxLen, str, start } = s.split('').reduce((accumulator, item, index) => {
             if (accumulator.map[item] !== undefined && accumulator.map[item] >= accumulator.start) {
                 accumulator.start = accumulator.map[item] + 1; // start new search with repeated word's last location + 1
